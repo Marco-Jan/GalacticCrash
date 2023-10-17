@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(24, 41, 61, 0.5);
+
+}
+
+#container {
+    width: 90%;
+    height: 90%;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(41, 19, 19);
+    
+}
+
+#startScreen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+#nameInput{
+    position: relative;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(40, 38, 136);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#nameInput:hover {
+    background-color: rgb(40, 38, 136);
+    color: #050801;
+    box-shadow: 0 0 5px rgb(40, 38, 136),
+                0 0 25px rgb(40, 38, 136),
+                0 0 50px rgb(40, 38, 136),
+                0 0 100px rgb(40, 38, 136);
+
+}
+
+#start_btn {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(61, 136, 38);
+    color: aliceblue;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#start_btn:hover {
+    background-color: rgb(61, 136, 38);
+    color: #050801;
+    box-shadow: 0 0 5px rgb(61, 136, 38),
+                0 0 25px rgb(61, 136, 38),
+                0 0 50px rgb(61, 136, 38),
+                0 0 100px rgb(61, 136, 38);
+}
+
+/* #highscores {
+    margin-top: 20px;
+} */
+
+#highscores{
+    background-color: rgba(225, 230, 235, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    width: 150px;
+    height: 300px;
+    color: aliceblue;
+    font-size: 24px;
+    margin-top: 100px;
+    transition: 0.3s ease-in-out;
+   
+}
+
+#highscores:hover{
+    background-color: rgba(38, 105, 136, 0.2);
+    transform: scale(1.2);
+    box-shadow: 0 0 5px rgb(38, 105, 136),
+                0 0 25px rgb(38, 105, 136),
+                0 0 50px rgb(38, 105, 136),
+                0 0 200px rgb(38, 105, 136);
+}
+
+#highscores li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+#playerNameDisplayId{
+    color: aliceblue;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+#character {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /* background-color: aliceblue; */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.obstacle {
+    position: absolute;
+}
+
+#timer {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 24px;
+    z-index: 1;
+    color: aliceblue;
+}
+
+#points {
+    position: absolute;
+    top: 10px;
+    left: 950px;
+    font-size: 24px;
+    z-index: 1;
+    color: aliceblue;
+
+}
+
+#lifeCount {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    font-size: 24px;
+    z-index: 1;
+    color: aliceblue;
+}
+
+.hidden {
+    display: none;
+}
+
+#gameOverScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+    z-index: 1;
+    background-color: transparent;
+    color: aliceblue;
+}
+
+#reset_btn {
+    position: absolute;
+    bottom: 20%;
+    padding: 0.3em 0.6em;
+    justify-content: center;
+    border-radius: 0.3em;
+    font-size: 0.5em;
+    z-index: 1;
+    color: rgb(17, 17, 17);
+    background-color: rgb(38, 105, 136);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+
+}
+#reset_btn:hover{
+    background-color: rgb(38, 105, 136);
+    color: #050801;
+    box-shadow: 0 0 5px rgb(38, 105, 136),
+                0 0 25px rgb(38, 105, 136),
+                0 0 50px rgb(38, 105, 136),
+                0 0 200px rgb(38, 105, 136);
+}
+
+#home_btn {
+    position: absolute;
+    bottom: 10%;
+    padding: 0.3em 0.6em;
+    justify-content: center;
+    border-radius: 0.3em;
+    font-size: 0.5em;
+    z-index: 1;
+    color: rgb(17, 17, 17);
+    background-color: rgb(38, 136, 67);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+
+}
+#home_btn:hover{
+    background-color: rgb(38,136,67);
+    color: #050801;
+    box-shadow: 0 0 5px rgb(38,136,67),
+                0 0 25px rgb(38,136,67),
+                0 0 50px rgb(38,136,67),
+                0 0 200px rgb(38,136,67);
+}
+
+
+.asteroid {
+    padding: 0;
+    /* background-image: url('../img/space_ship.jpg'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.spaceship {
+    padding: 0;
+    /* background-image: url('../img/asteroid-isolated.jpg'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.flame {
+    width: 10px;
+    height: 20px;
+    /* background-color: red; */
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
