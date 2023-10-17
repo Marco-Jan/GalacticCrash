@@ -1,3 +1,7 @@
+import spaceShipOb from'./assets/img/space_ship.png';
+import asteroid from './assets/img/asteroid-isolated.png';
+
+
 class Obstacle {
     constructor({ positionX, positionY, type }) {
         this.element = document.createElement('div');
@@ -12,12 +16,12 @@ class Obstacle {
         this.innerHeight = this.height - 50; // innere hitbox Größe
 
         if (type === 'asteroid') {
-            this.element.style.backgroundImage = "url('../src/assets/img/space_ship.png')";
+            this.element.style.backgroundImage = `url(${spaceShipOb})`;
             this.element.style.width = this.width + 'px';
             this.element.style.height = this.height + 'px';
 
         } else if (type === 'spaceship') {
-            this.element.style.backgroundImage = "url('../src/assets/img/asteroid-isolated.png')";
+            this.element.style.backgroundImage = `url(${asteroid})`;
             this.element.style.width = this.width + 'px';
             this.element.style.height = this.height + 'px';
 

@@ -4,12 +4,13 @@ import Timer from './timer.js';
 import GameOverScreen from './GameOver.js';
 import sounds from './soundboard.js';
 import { saveHighscore } from './highscores.js';
+import game_bg from './assets/img/carina_bg.jpeg'
 
 
 
 export default class Game {
     constructor(playerName) {
-        this.background = "url('../src/assets/img/carina_bg.jpeg')";
+        this.background = `url(${game_bg})`;
         this.character = new Character({ positionX: 600, positionY: 345 });
         this.obstacles = new Obstacles();
         this.timer = new Timer();

@@ -5,10 +5,9 @@ import Game from './game.js';
 import initStartPage from './startPage.js';
 import sounds from './soundboard.js';
 import './assets/style.css';
-import './assets/img/asteroid-isolated.png';
 import './assets/img/deep_space_webb.png';
-import './assets/img/space_ship.png';
-import './assets/img/spaceShip_Char.png';
+
+
 
 
 

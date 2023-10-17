@@ -1,4 +1,5 @@
-
+import spaceShipChar from './assets/img/spaceShip_Char.png';
+import flame from './assets/img/flame.png'
 
 export default class Character {
     constructor({ positionX, positionY }) {
@@ -8,7 +9,7 @@ export default class Character {
         // Erzeuge das Charakter-Element
         this.element = document.createElement('div');
         this.element.id = 'character';
-        this.element.style.backgroundImage = "url('../src/assets/img/spaceShip_Char.png')";
+        this.element.style.backgroundImage = `url(${spaceShipChar})`;
         container.appendChild(this.element);
         this.positionX = positionX;
         this.positionY = positionY;
@@ -20,7 +21,7 @@ export default class Character {
         this.rocketFlame = document.createElement('div');
         this.rocketFlame.className = 'flame';
         this.rocketFlame.style.display = 'none';
-        this.rocketFlame.style.backgroundImage = "url('../src/assets/img/flame.png')";
+        this.rocketFlame.style.backgroundImage = `url(${flame})`;
         document.getElementById('container').appendChild(this.rocketFlame);
         this.updatePosition();
     }
