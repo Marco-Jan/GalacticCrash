@@ -1,7 +1,6 @@
-import { init } from 'es-module-lexer';
+
 import sounds from './soundboard.js';
-import { initialGame } from './index.js';
-import initStartPage from './startPage.js';
+
 
 
 export default class GameOverScreen {

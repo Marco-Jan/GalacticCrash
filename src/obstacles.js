@@ -7,7 +7,7 @@ class Obstacle {
         this.element = document.createElement('div');
         this.element.className = `obstacle ${type}`;
 
-        this.width = Math.floor(Math.random() * 250);  // Random width between 50 and 500
+        this.width = Math.floor(Math.random() * 250);  
         this.height = this.width;
 
         this.innerX = this.positionX + 10;  // Offset
@@ -33,7 +33,6 @@ class Obstacle {
         this.positionY = positionY;
 
 
-        this.element.style.height = this.height + 'px';
         this.updatePosition();
         document.getElementById('container').appendChild(this.element);
     }
@@ -46,7 +45,7 @@ class Obstacle {
     }
 
     move() {
-        this.positionX -= 2;  // Geschwindigkeit der Hindernisse
+        this.positionX -= 1;  // Geschwindigkeit der Hindernisse
         this.updatePosition();
     }
 }

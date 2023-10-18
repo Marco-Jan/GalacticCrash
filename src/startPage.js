@@ -1,7 +1,7 @@
 import { initialGame } from './index.js';
 import sound from './soundboard.js';
 import { getHighscores } from './highscores.js';
-import startpage_bg from './assets/img/deep_space_webb.jpeg'
+import startpage_bg from './assets/img/deep_space_webb.png'
 
 function initStartPage() {
 
@@ -21,7 +21,7 @@ function initStartPage() {
         startScreen.style.backgroundImage = `url(${startpage_bg})`;
         startButton.innerHTML = 'Start Game';
 
-        const highscores = displayHighscores();
+        const highscores = displayHighscores(); 
         highscores.id = 'highscores';
 
 

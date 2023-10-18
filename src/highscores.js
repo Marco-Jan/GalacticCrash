@@ -12,11 +12,11 @@ export function saveHighscore(score, playerName) {
       highscores.push({ name: playerName, score });
   }
 
-  // Sortiere die Liste
+  
   highscores.sort((a, b) => b.score - a.score);
 
-  // Beschränke die Liste auf die Top 10
-  highscores = highscores.slice(0, 10);
+  // Beschränke die Liste auf  5
+  highscores = highscores.slice(0, 5);
 
   // Speichere die aktualisierte Liste im Local Storage
   localStorage.setItem('highscores', JSON.stringify(highscores));

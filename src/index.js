@@ -9,11 +9,6 @@ import './assets/img/deep_space_webb.png';
 
 
 
-
-
-
-
-
 initStartPage();
 
 let newGame;
@@ -66,10 +61,6 @@ export function initialGame(playerName) {        //erstellt neues Game Objekt
         }
     });
 
-    // document.getElementById('restartButton').addEventListener('click', () => {
-    //     newGame.restart();
-
-    // });
 
 
     function animate() {
